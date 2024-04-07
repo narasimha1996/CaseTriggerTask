@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Basic DataTable">
+        <lightning-button variant="base" label="Load Data" title="load" onclick={accountDetails} class="slds-m-left_x-small"></lightning-button>
+        <template lwc:if={data}>
+            <div style="height: 300px;">
+                <lightning-datatable key-field="id" data={data} columns={columns} hide-checkbox-column="true">
+                </lightning-datatable>
+            </div>
+        </template>
+        <template lwc:elseif={error}>
+          <h1>{error}</h1>
+        </template>
+       
+    </lightning-card>
+
+
+
+</template>

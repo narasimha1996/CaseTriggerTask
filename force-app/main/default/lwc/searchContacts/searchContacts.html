@@ -1,0 +1,24 @@
+<template>
+    <div>
+        <lightning-card>
+            <lightning-input name="Search" label="Input" type="text" onchange={searchHandler}>
+                
+            </lightning-input>
+            <lightning-button label="Search" name="SearchCon" onclick={clickHandler}></lightning-button>
+           
+            <template if:true={conList}>
+                <lightning-datatable   key-field="id" columns={columns} data={conList} hide-checkbox-column>
+
+                </lightning-datatable>
+
+            </template>
+                    
+            
+
+
+       
+        </lightning-card>
+
+    </div>
+    
+</template>
