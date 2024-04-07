@@ -1,5 +1,5 @@
 public with sharing class CaseTriggerHandler {
-    List<SQX_Nonconformance__c> nonConList=new List<SQX_Nonconformance__c>();
+    List<SQX_Nonconformance__c> nonConList =new List<SQX_Nonconformance__c>();
          set<Id> caseIds=new Set<Id>();
     public void onAfterInsert(List<Case> newCase)
     {

@@ -1,6 +1,6 @@
 trigger nonConferenceOnCase on Case (after insert,before update) {
 
-    CaseTriggerHandler  handler = new CaseTriggerHandler();
+    CaseTriggerHandler handler = new CaseTriggerHandler();
 
     if(trigger.isAfter){
         if(trigger.isInsert){

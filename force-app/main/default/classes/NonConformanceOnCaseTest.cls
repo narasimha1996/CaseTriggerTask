@@ -1,7 +1,7 @@
 @isTest
 public with sharing class NonConformanceOnCaseTest {
         @isTest
-        static void testOnAfterInsert() {
+        static void testOnAfterInsert(){
 
             Test.startTest();
     
